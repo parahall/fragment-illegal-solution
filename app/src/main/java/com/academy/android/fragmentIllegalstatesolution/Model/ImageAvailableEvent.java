@@ -1,4 +1,4 @@
-package com.academy.android.fragmentIllegalstatesolution;
+package com.academy.android.fragmentIllegalstatesolution.Model;
 
 import android.graphics.drawable.Drawable;
 

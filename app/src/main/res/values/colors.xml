@@ -14,7 +14,7 @@
     <color name="c10">#707070</color>
 
     <!--dialogs color -->
-    <color name="dialog_bg">@color/c1</color>
+    <color name="dialog_bg">@color/c9</color>
     <color name="dialog_title_bg">@color/c2</color>
     <color name="dialog_title_color">@color/c4</color>
     <color name="dialog_message_color">@color/c3</color>

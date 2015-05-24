@@ -1,15 +1,30 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@color/background_material_dark"
+                android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_am_show_dialog"
-        android:text="Show Dialog"
-        android:layout_centerInParent="true"
-        android:layout_width="match_parent"
-        android:layout_height="70dp" />
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivity">
 
+        <Button
+                android:id="@+id/btn_am_show_dialog"
+                android:text="Show Dialog"
+                android:layout_centerInParent="true"
+                android:layout_width="250dp"
+                android:layout_height="70dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/dialog_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 </RelativeLayout>
+

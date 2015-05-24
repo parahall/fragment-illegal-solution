@@ -1,4 +1,6 @@
-package com.academy.android.fragmentIllegalstatesolution;
+package com.academy.android.fragmentIllegalstatesolution.Model;
+
+import com.academy.android.fragmentIllegalstatesolution.BusProvider;
 
 import android.app.IntentService;
 import android.content.Intent;
