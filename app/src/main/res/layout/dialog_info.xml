@@ -22,6 +22,7 @@
             tools:text="TITLE"/>
     </LinearLayout>
 
+
     <!--This is the workaround for issue that scrollview fill the whole space and button was dissapeared. Please keep weight 1.-->
     <ScrollView
         android:layout_width="match_parent"
@@ -30,14 +31,10 @@
         android:layout_margin="@dimen/dialog_message_margin"
         android:fillViewport="true">
 
-        <TextView
-            android:id="@+id/tv_di_dialog_message"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textColor="@color/dialog_message_color"
-            android:textSize="@dimen/dialog_message_text_size"
-            tools:text="BODY OF THE MESSAGE. DON'T FORGET THAT IT COULD BE VERY LONG"/>
+         <ImageView
+             android:id="@+id/iv_di_dialog_image"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
     </ScrollView>
 
     <View

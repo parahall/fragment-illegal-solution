@@ -2,11 +2,46 @@
 <items version="2" >
 
     <item
-        jar="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jar="D:\Development\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-c03c25afc40bef5bac7f8f018b9b301623e4f3b4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yonatan\.gradle\caches\modules-2\files-2.1\com.squareup\otto\1.3.7\69d90fd7fb70e54746e26c10454c220e40a775ce\otto-1.3.7.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="69d90fd7fb70e54746e26c10454c220e40a775ce">
+        <dex dex="D:\Code\fragment-illegal-solution\app\build\intermediates\pre-dexed\debug\otto-1.3.7-47a29d0452bae8f9b9a1060db620a77236869158.jar" />
+    </item>
+    <item
+        jar="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-389152c3e6ace80dd7a942b36e58ebfc129250bb.jar" />
+    </item>
+    <item
+        jar="D:\Code\fragment-illegal-solution\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\pre-dexed\debug\classes-d35fd94e5e128fe2b2f6135af333d221f4af337b.jar" />
+        <dex dex="D:\Code\fragment-illegal-solution\app\build\intermediates\pre-dexed\debug\classes-ac1249b5e0804bd69fa564e7469d3c377ea3f42c.jar" />
+    </item>
+    <item
+        jar="D:\Code\fragment-illegal-solution\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="D:\Code\fragment-illegal-solution\app\build\intermediates\pre-dexed\debug\classes-a8b2ed89080f55f69560653a4716af3c10138914.jar" />
+    </item>
+    <item
+        jar="D:\Code\fragment-illegal-solution\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="D:\Code\fragment-illegal-solution\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-b631860267b2c55c918c9e4da2307740af61a405.jar" />
     </item>
     <item
         jar="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
@@ -16,18 +51,11 @@
         <dex dex="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\pre-dexed\debug\classes-e509c59a7edb576dc9ba7557bfecd97e1aba2ff5.jar" />
     </item>
     <item
-        jar="D:\Development\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jar="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-c03c25afc40bef5bac7f8f018b9b301623e4f3b4.jar" />
-    </item>
-    <item
-        jar="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-389152c3e6ace80dd7a942b36e58ebfc129250bb.jar" />
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="D:\Code\FragmentIllegalStateSolution\app\build\intermediates\pre-dexed\debug\classes-d35fd94e5e128fe2b2f6135af333d221f4af337b.jar" />
     </item>
 
 </items>

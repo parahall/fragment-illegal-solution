@@ -1,19 +1,28 @@
 package com.academy.android.fragmentIllegalstatesolution;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.io.ByteArrayOutputStream;
 
 public class DialogInfo extends DialogFragment implements View.OnClickListener {
 
     private static final String TITLE_KEY = "TITLE_KEY";
 
     private static final String MESSAGE_KEY = "MESSAGE_KEY";
+
+    private static final String IMAGE_KEY = "IMAGE_KEY";
 
     private static final String IS_CANCELABLE_KEY = "IS_CANCELABLE_KEY";
 
@@ -25,14 +34,20 @@ public class DialogInfo extends DialogFragment implements View.OnClickListener {
 
     private OnDialogInfoClickedListener mListener;
 
-    public static DialogInfo newInstance(String title, String message, String infoButtonText,
-            boolean isCancelable, int requestCode) {
+    public static DialogInfo newInstance(String title, String message, Drawable image, String infoButtonText,
+                                         boolean isCancelable, int requestCode) {
         DialogInfo dialog = new DialogInfo();
 
         Bundle args = new Bundle();
 
         args.putString(TITLE_KEY, title);
         args.putString(MESSAGE_KEY, message);
+
+        Bitmap bitmap= ((BitmapDrawable) image).getBitmap();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        byte[] imageBytes = baos.toByteArray();
+        args.putByteArray(IMAGE_KEY, imageBytes);
 
         args.putString(INFO_BUTTON_TEXT_KEY, infoButtonText);
         args.putBoolean(IS_CANCELABLE_KEY, isCancelable);
@@ -54,15 +69,18 @@ public class DialogInfo extends DialogFragment implements View.OnClickListener {
 
         // get the saved fields
         String titleText = getArguments().getString(TITLE_KEY, "");
-        String messageText = getArguments().getString(MESSAGE_KEY, "");
+
+        byte[] byteArray = getArguments().getByteArray(IMAGE_KEY);
+        Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+
         String positiveText = getArguments().getString(INFO_BUTTON_TEXT_KEY,
                 getString(R.string.global_close));
         boolean isCancelable = getArguments().getBoolean(IS_CANCELABLE_KEY, true);
 
         // inflate & get the views
         ViewGroup view = (ViewGroup) inflater.inflate(R.layout.dialog_info, container, false);
+        ImageView image = (ImageView) view.findViewById(R.id.iv_di_dialog_image);
         TextView titleTextView = (TextView) view.findViewById(R.id.tv_di_dialog_title);
-        TextView messageTextView = (TextView) view.findViewById(R.id.tv_di_dialog_message);
         TextView positiveTextView = (TextView) view.findViewById(R.id.btn_di_ok);
 
         // Set the strings
@@ -72,7 +90,7 @@ public class DialogInfo extends DialogFragment implements View.OnClickListener {
             titleTextView.setVisibility(View.VISIBLE);
             titleTextView.setText(titleText);
         }
-        messageTextView.setText(messageText);
+        image.setImageBitmap(bitmap);
         positiveTextView.setText(positiveText);
         positiveTextView.setOnClickListener(this);
         setCancelable(isCancelable);
