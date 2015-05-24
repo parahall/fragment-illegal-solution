@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Fragment Illegal State Solution 1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- GLOBAL STRINGS -->
+    <string name="global_ok">OK</string>
+    <string name="global_yes">YES</string>
+    <string name="global_no">NO</string>
+    <string name="global_close">CLOSE</string>
+    <string name="global_cancel">CANCEL</string>
+
+</resources>

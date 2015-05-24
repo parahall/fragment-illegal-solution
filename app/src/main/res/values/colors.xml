@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BASE COLORS -->
+    <color name="c1">#ffffff</color>
+    <color name="c2">#ebebeb</color>
+    <color name="c3">#000000</color>
+    <color name="c4">#3974ff</color>
+    <color name="c5">#fdb924</color>
+    <color name="c6">#51c332</color>
+    <color name="c7">#a0a0a0</color>
+    <color name="c8">#f55656</color>
+    <color name="c9">#d0d0d0</color>
+    <color name="c10">#707070</color>
+
+    <!--dialogs color -->
+    <color name="dialog_bg">@color/c1</color>
+    <color name="dialog_title_bg">@color/c2</color>
+    <color name="dialog_title_color">@color/c4</color>
+    <color name="dialog_message_color">@color/c3</color>
+    <color name="dialog_message_separator">@color/c5</color>
+    <color name="dialog_positive_color">@color/c3</color>
+    <color name="dialog_btn_bg_pressed">@color/c7</color>
+    <color name="dialog_btn_bg_disable">#7Fc4c4c4</color>
+    <color name="dialog_btn_bg_enable">@color/c1</color>
+    <color name="dialog_buttons_separator">@color/c7</color>
+</resources>
