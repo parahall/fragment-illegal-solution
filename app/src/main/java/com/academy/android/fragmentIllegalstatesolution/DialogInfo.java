@@ -11,34 +11,18 @@ import android.widget.TextView;
 
 public class DialogInfo extends DialogFragment implements View.OnClickListener {
 
-    private static final String TITLE_KEY = "TITLE_KEY";
-
-    private static final String MESSAGE_KEY = "MESSAGE_KEY";
-
-    private static final String IS_CANCELABLE_KEY = "IS_CANCELABLE_KEY";
-
-    private static final String INFO_BUTTON_TEXT_KEY = "INFO_BUTTON_TEXT_KEY";
-
-    private static final String REQUEST_CODE_KEY = "REQUEST_CODE_KEY";
-
-    public static String TAG = DialogInfo.class.getSimpleName();
-
     private OnDialogInfoClickedListener mListener;
 
     public static DialogInfo newInstance(String title, String message, String infoButtonText,
             boolean isCancelable, int requestCode) {
         DialogInfo dialog = new DialogInfo();
-
         Bundle args = new Bundle();
-
         args.putString(TITLE_KEY, title);
         args.putString(MESSAGE_KEY, message);
-
         args.putString(INFO_BUTTON_TEXT_KEY, infoButtonText);
         args.putBoolean(IS_CANCELABLE_KEY, isCancelable);
         args.putInt(REQUEST_CODE_KEY, requestCode);
         dialog.setArguments(args);
-
         return dialog;
     }
 
@@ -51,7 +35,6 @@ public class DialogInfo extends DialogFragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-
         // get the saved fields
         String titleText = getArguments().getString(TITLE_KEY, "");
         String messageText = getArguments().getString(MESSAGE_KEY, "");
@@ -114,4 +97,17 @@ public class DialogInfo extends DialogFragment implements View.OnClickListener {
 
         void onDialogInfoButtonClicked(int requestCode);
     }
+
+
+    private static final String TITLE_KEY = "TITLE_KEY";
+
+    private static final String MESSAGE_KEY = "MESSAGE_KEY";
+
+    private static final String IS_CANCELABLE_KEY = "IS_CANCELABLE_KEY";
+
+    private static final String INFO_BUTTON_TEXT_KEY = "INFO_BUTTON_TEXT_KEY";
+
+    private static final String REQUEST_CODE_KEY = "REQUEST_CODE_KEY";
+
+    public static String TAG = DialogInfo.class.getSimpleName();
 }
